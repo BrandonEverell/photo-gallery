@@ -5,15 +5,311 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 
 </head>
 <body>
+<div class="banner-box">
+    <div class="banner">
+        <h1 class="banner-head"> Tolkien Group Gallery</h1>
+    </div>
+</div>
+
+<div class="overlay">
+    <div class="overlay-inner">
+        <button class="close">X Close</button>
+        <img>
+    </div>
+</div>
+
+<section class="gallery">
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0007.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0011.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0014.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0015.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0017.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0019.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0021.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0029.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0032.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0059.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0061.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0062.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0069.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0075.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0077.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-9948.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-9953.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0059.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0059.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="Images/Tokien_Group-0059.jpg">
+        <div class="item__overlay">
+            <button>View</button>
+        </div>
+    </div>
+</section>
 
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 50px;
+        background-color: #323232;
+    }
+
+    .banner-box {
+        display:grid;
+        justify-items: center;
+    }
+
+    .banner {
+        box-sizing: border-box;
+        width: 100%;
+        height: 60vh;
+        padding: 20px;
+        margin: 20px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        justify-content: center;
+        background-image: url("Images/Tokien_Group-9988.jpg");
+        background-size: cover;
+    }
+
+
+    .banner-head {
+        grid-row: 1;
+        grid-column: 2/5;
+        text-align: center;
+        align-self: center;
+        color: white;
+        font-family: 'Rock Salt', cursive;
+    }
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-auto-rows: 300 px;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
+    }
+
+
+    .item {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1;
+        overflow: hidden;
+    }
+    .item img {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .close {
+        background: none;
+        color: black;
+        border: 0;
+    }
+
+    .item__overlay {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        position: relative;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        transition: 0.2s;
+        transform: translateY(100%);
+    }
+
+    .item__overlay button {
+        background: none;
+        border: 2px solid white;
+        color: white;
+        text-transform: uppercase;
+        background: rgba(0,0,0,0.7);
+        padding: 5px;
+    }
+
+    .item:hover .item__overlay {
+        transform: translateY(0);
+    }
+
+    .overlay {
+        position:fixed;
+        background: (0,0,0,0.7);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        z-index: 2;
+    }
+
+    .overlay.open {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .overlay-inner {
+        background: white;
+        width: 1000px;
+        padding: 10px;
+    }
+
+    .overlay img {
+        width: 100%;
+    }
+
+
+
 
 </style>
 <script>
+
+    const overlay = document.querySelector('.overlay');
+    const overlayImage = overlay.querySelector(('img'));
+    const overlayClose = overlay.querySelector('.close');
+
+    function handleClick(e) {
+        const src = e.currentTarget.querySelector('img').src;
+        overlayImage.src = src;
+        overlay.classList.add('open');
+    }
+
+    function close() {
+        overlay.classList.remove('open');
+    }
+    const items = document.querySelectorAll('.item');
+
+    items.forEach(item => item.addEventListener('click', handleClick));
+
+    overlayClose.addEventListener('click', close);
 
 </script>
 </body>
